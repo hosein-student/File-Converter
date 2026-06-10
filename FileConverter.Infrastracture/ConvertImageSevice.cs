@@ -7,6 +7,7 @@ using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Formats;
 using SixLabors.ImageSharp.Formats.Bmp;
 using SixLabors.ImageSharp.Formats.Gif;
+using SixLabors.ImageSharp.Formats.Ico;
 using SixLabors.ImageSharp.Formats.Jpeg;
 using SixLabors.ImageSharp.Formats.Png;
 using SixLabors.ImageSharp.Formats.Webp;
@@ -61,6 +62,7 @@ public class ConvertImageSevice : IConvertImageSevice
             ImageFormat.Webp => new WebpEncoder { Quality = 85 },
             ImageFormat.Bmp => new BmpEncoder(),
             ImageFormat.Gif => new GifEncoder(),
+            ImageFormat.Ico => new IcoEncoder(),
             _ => new PngEncoder()
         };
     }
@@ -75,6 +77,7 @@ public class ConvertImageSevice : IConvertImageSevice
             ImageFormat.Webp => ".webp",
             ImageFormat.Bmp => ".bmp",
             ImageFormat.Gif => ".gif",
+            ImageFormat.Ico => ".ico",
             _ => ".png"
         };
     }
