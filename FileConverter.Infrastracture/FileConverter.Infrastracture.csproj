@@ -10,4 +10,8 @@
     <ProjectReference Include="..\FileConverter.Application\FileConverter.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="4.0.0" />
+  </ItemGroup>
+
 </Project>
