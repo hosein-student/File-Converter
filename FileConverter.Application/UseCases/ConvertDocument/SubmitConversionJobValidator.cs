@@ -1,9 +1,9 @@
 ﻿using FluentValidation;
 
-namespace FileConverter.Application.Jobs.Commands.SubmitConversionJob
+namespace FileConverter.Application.UseCases.ConvertDocument
 {
     public sealed class SubmitConversionJobValidator
-    : AbstractValidator<SubmitConversionJobCommand>
+    : AbstractValidator<ConvertDocumentDto>
     {
         private static readonly string[] Allowed = ["pdf", "docx"];
 
